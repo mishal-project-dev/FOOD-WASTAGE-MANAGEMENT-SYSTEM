@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Waste Reduction Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🍽️ Food Waste Reduction Platform</h1>
+  <p>Donate surplus food instead of wasting it</p>
+
+  <div class="form-box">
+    <input type="text" id="name" placeholder="Restaurant / Hostel Name">
+    <input type="text" id="location" placeholder="Location">
+    <input type="number" id="quantity" placeholder="Food Quantity (plates)">
+    <input type="text" id="contact" placeholder="Contact Number">
+    <button onclick="addFood()">Donate Food</button>
+  </div>
+
+  <h2> Available Food Donations</h2>
+  <div id="foodList"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
